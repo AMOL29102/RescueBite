@@ -51,7 +51,7 @@ const ConsumerRequestCards = ({ data, dataType, refreshData }) => {
 
     // "http://localhost:3001"
     try {
-      await axios.post("https://rescue-bite-server-nt5i27bs5-amols-projects-604b6fbf.vercel.app/update_count", {
+      await axios.post("https://rescue-bite-server-hf2las26n-amols-projects-604b6fbf.vercel.app/update_count", {
         food_id: selectedRequest.food_id,
         count: numPeopleInt,
       });
