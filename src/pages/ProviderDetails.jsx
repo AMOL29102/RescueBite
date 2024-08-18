@@ -35,7 +35,7 @@ function BookingForm() {
   const fetchProviderId = async () => {
     if (!token) navigate("/providerlogin");
     try {
-      const response = await axios.get("https://rescue-bite-server-hf2las26n-amols-projects-604b6fbf.vercel.app/provider_id", {
+      const response = await axios.get("https://serverproject-xi.vercel.app/provider_id", {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${token}`,
@@ -70,7 +70,7 @@ function BookingForm() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://rescue-bite-server-hf2las26n-amols-projects-604b6fbf.vercel.app/provider_details",
+        "https://serverproject-xi.vercel.app/provider_details",
         {
           restoName,
           veg,

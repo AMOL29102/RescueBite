@@ -32,7 +32,7 @@ function LoginPage() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://rescue-bite-server-hf2las26n-amols-projects-604b6fbf.vercel.app/consumer_signup",
+        "https://serverproject-xi.vercel.app/consumer_signup",
         {
           mobile_no,
           name,
@@ -59,7 +59,7 @@ function LoginPage() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://rescue-bite-server-hf2las26n-amols-projects-604b6fbf.vercel.app/consumer_signin",
+        "https://serverproject-xi.vercel.app/consumer_signin",
         {
           mobile_no: signInMobileNo,
           password: signInPassword,
